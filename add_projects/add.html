@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Index of add</title>
+
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/add.css" />
+
+</head>
+<body>
+  <div class="container">
+    <div class="app-header">
+      <h2>Add Projects</h2>
+    </div>
+    
+    <div id="error-message"></div>
+
+    <div class="input-controller inpbut">
+      <div class="input-query">
+        <input type="text" placeholder="Enter project name.." id="project-name-query" />
+      </div>
+
+      <div id="options">
+        <span>
+          Pending <input type="radio" name="status" class="statusopt" value="pending" />
+        </span>
+
+        <span>
+          Doing <input type="radio" name="status" class="statusopt" value="working" />
+        </span>
+
+        <span>
+          Finished <input type="radio" name="status" class="statusopt" value="completed" />
+        </span>
+      </div>
+
+      <div id="extra-options">
+        <span>
+          From: <input type="date" id="startdate" />
+        </span>
+        <span>
+          To: <input type="date" id="enddate" />
+        </span>
+      </div>
+      <div id="main-button">
+        <input type="button" id="addprojectbutton" value="Save" />
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../script/add.js"></script>
+</body>
+</html>

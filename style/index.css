@@ -1,0 +1,111 @@
+@import './_root.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open sans' sans-serif;
+  font-size : 13px;
+  color: var(--on-bg-text);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  grid-gap: 20px;
+  padding: 15px 0;
+}
+
+h2, h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.app-header {
+  padding: 10px;
+}
+
+.inpbut {
+  padding: 10px;
+}
+
+.inpbut span + span {
+  margin-left: 10px;
+}
+
+.manage-buttons a{
+  text-decoration: none;
+  color: var(--primary);
+  padding: 8px 25px;
+  border-radius: 6px;
+  border: 1px solid var(--primary);
+  font-weight: 500;
+}
+
+
+.projects-dashboard {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  /*background-color: var(--on-bg-bg);*/
+}
+
+.card {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--on-card-border);
+  border-radius: 6px;
+  box-shadow: var(--on-card-shadow);
+}
+
+.card + .card {
+  margin-top: 20px;
+}
+
+.doing-project .item{
+  color: var(--primary-current);
+}
+
+.pending-projects .item{
+  color: var(--primary-pending);
+}
+
+.completed-projects .item{
+  color: var(--primary-completed);
+}
+
+.project-heading-tittle {
+  border-bottom: 1px solid var(--on-bg-border);
+  padding: 15px 10px;
+}
+
+.list-item {
+  padding: 0 20px;
+}
+
+.item {
+  padding: 10px 0;
+}
+
+.item + .item {
+  border-top: 1px solid var(--on-bg-border);
+  
+}
+
+.item span {
+  display: block;
+  font-size: 12px;
+  color: var(--on-bg-text-dim);
+  font-style: italic;
+}

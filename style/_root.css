@@ -1,0 +1,13 @@
+:root {
+  --on-bg-text: #121212;
+  --on-bg-text-dim: rgba(00, 00, 00, 60%);
+  --on-bg-bg: #f5f5f5;
+  --on-bg-border: #e5e5e5;
+  --on-card-shadow: 0 1px 2px #dddddd, 
+                    0 2px 5px #e0e0e0, 
+                    0 -1px 5px #eeeeee;
+  --primary: #78909C;
+  --primary-current: #FF7043;
+  --primary-pending: #FFA000;
+  --primary-completed: #4CAF50;
+}
